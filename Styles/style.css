@@ -3,11 +3,8 @@
    margin: 0 auto;
 }
 body{
-   
    max-width: 1440px;
-   border: 1px solid black;
-   
-
+   background: #FFF;
 }
 
 .primary-color{
@@ -99,11 +96,80 @@ nav > ul > li > a{
     grid-template-columns: repeat(3 , 1fr);
     margin-left: 150px;
 }
+.popular-collection > p a{
+   text-decoration: none;
+   
+}
 .popular-item{
    border-radius: 5px;
    background: #FFF;
    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
    padding: 20px;
+}
+
+
+.products{
+   display: flex;
+   padding-left: 100px;
+
+}
+.product-img{
+
+}
+.product-text{
+
+}
+.products-text h1{
+   color: #0A0826;
+   font-size:2.5rem;
+   font-weight: 700;
+   line-height: 60px; 
+   margin-bottom: 20px;
+}
+.product-text p{
+   color: #6C6C6C;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 28px; /* 175% */
+}
+
+.btn{
+   padding: 15px 25px;
+   color: #fff;
+   background: #E02C6D;
+   border-radius: 8px;
+   border: 0;
+   margin-top: 30px;
+   cursor: pointer;
+}
+
+
+.footer{
+   background: #0A0826;
+}
+.footer-text{
+   text-align: center;
+   padding-top: 40px;
+}
+.footer-text p{
+   color: var(--Text-Gray-300, #D9DBE1);;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 24px; /* 171.429% */
+}
+.footer-text h4{
+   color: #FFF;  
+   font-size: 24px;
+   font-weight: 700;
+}
+.icon ul{
+   padding-top: 20px;
+   display: flex;
+   width: 10%;
+   
+}
+.footer li a{
+   color: #fff;
 }
 
 /* Responsive Css */
@@ -139,6 +205,42 @@ nav > ul > li > a{
       grid-template-columns: repeat(1 , 1fr);
       margin-left: 0px;
    }
+   .products{
+      flex-direction: column;
+      padding-left: 0;
+      margin: 10PX;
+   
+   }
+   .product-img{
+
+   }
+   .product-img img{
+      width: 90%;
+   }
+   .productS-text{
+     width: 50%;
+   }
+   .products-text h1{
+      font-size:2rem;
+      font-weight: 500;
+      width: 90%;
+   }
+   .product-text p{
+      color: #6C6C6C;
+      font-size: 10px;
+      width: 50%;
+      
+   }
+   .footer{
+      padding-bottom: 20px;
+   }
+   .icon{
+      margin-left: -100px;
+   }
+   .icon ul li a{
+      margin-right: 20px;
+      
+   }
 }
 
 /* Medium Responsive Css */
@@ -167,5 +269,19 @@ nav > ul > li > a{
       margin-left: 0px;
       
    }
-   
+   .products{
+      flex-direction: column;
+      padding-left: 0;
+      margin: 10PX;
+   }
+   .footer{
+      padding-bottom: 20px;
+   }
+   .icon{
+      margin-left: -100px;
+   }
+   .icon ul li a{
+      margin-right: 20px;
+      
+   }
 }
