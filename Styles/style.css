@@ -55,7 +55,7 @@ nav > ul > li > a{
 }
 .banner-img{
    padding: 30px;
-   background-image: url("/images/Circle\ design.svg");
+   background-image: url("./images/Circle\ design.svg");
    background-position: center;
    background-repeat: no-repeat;
 }
